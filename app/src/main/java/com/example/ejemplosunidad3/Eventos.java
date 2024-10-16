@@ -30,8 +30,8 @@ public class Eventos extends AppCompatActivity {
             return insets;
         });
 
-        imageView = (ImageView) findViewById(R.id.laImagen);
-        imageView.setVisibility(View.VISIBLE);
+        imageView = (ImageView) findViewById(R.id.imageView2);
+        imageView.setVisibility(ImageView.VISIBLE);
 
 
         toggleButton = (ToggleButton) findViewById(R.id.toggleButton);
@@ -42,12 +42,12 @@ public class Eventos extends AppCompatActivity {
                 if (isChecked){
                     System.out.println("ACTIVADO");
                     buttonView.setTextColor(Color.RED);
-                    imageView.setVisibility(View.VISIBLE);
+                    imageView.setVisibility(ImageView.VISIBLE);
                 }
                 else {
                     System.out.println("DESACTIVADO");
                     buttonView.setTextColor(Color.GRAY);
-                    imageView.setVisibility(View.INVISIBLE);
+                    imageView.setVisibility(ImageView.INVISIBLE);
 
 
 
