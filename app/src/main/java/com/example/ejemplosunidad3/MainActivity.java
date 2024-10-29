@@ -8,6 +8,7 @@ import android.text.Spanned;
 import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -68,6 +69,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,Eventos.class);
+                startActivity(intent);
+            }
+        });
+
+        Button bt_radios = (Button) findViewById(R.id.buttonRadio);
+        bt_radios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RadioButtons.class);
                 startActivity(intent);
             }
         });
